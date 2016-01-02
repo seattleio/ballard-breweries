@@ -1,0 +1,27 @@
+{
+  "name": "ballard-breweries",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "budo index.js --live"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seattleio/ballard-breweries.git"
+  },
+  "author": "sethvincent <sethvincent@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/seattleio/ballard-breweries/issues"
+  },
+  "homepage": "https://github.com/seattleio/ballard-breweries#readme",
+  "dependencies": {
+    "leaflet": "^0.7.7",
+    "turf-point": "^2.0.1",
+    "virtual-app": "^2.0.0",
+    "virtual-dom": "^2.1.1",
+    "virtual-leaflet": "^1.0.0",
+    "xtend": "^4.0.1"
+  }
+}
