@@ -54,7 +54,11 @@ function location (location) {
     h('p.address', location.address),
     h('p.website', [
       h('a', { href: location.website }, location.website)
-    ])
+    ]),
+    h('p.map', h('a', {
+      target: '_blank',
+      href: 'https://google.com/maps/place/' + location.latitude + ',' + location.longitude
+    }, 'Google directions'))
   ])
 }
 
@@ -68,7 +72,7 @@ function about () {
 
 function map (geojson) {
   return h('div#map', createMap(geojson, {
-    zoom: 15,
+    zoom: 14,
     setView: true,
     center: [47.664, -122.372],
     onclick: function (e) {
